@@ -5,13 +5,183 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href=".normalize.css">
   <link rel="stylesheet" href="./styles.css">
   <title>Connect Page</title>
 </head>
 
 <body>
-  <h1>Welcome to Belvo</h1>
-  <img class="logo" src="./assets/belvo.png" />
+  <div class="logo wrapper"><img src="./assets/logos/BelvoLogo.svg"></div>
+
+  <div class="header">
+    <div class="header__title">
+      <h1>What’s Belvo?</h1>
+    </div>
+    <div class="header__body">
+      Belvo is the easiest and most secure way to connect users’ financial
+      data with any app in Latin America.
+    </div>
+    <div class="header__link">
+      <a class="btn btn--mx16" href="https://belvo.com/about/" target="_blank" rel="noopener noreferrer">
+        Know more about Belvo <img class="btn__icon" src=" ./assets/arrow.png"></a>
+    </div>
+  </div>
+  <div class="claim">
+    <h2>Trusted by the leading financial innovators</h2>
+  </div>
+  <div class="carousel wrapper">
+    <div class="carousel__item"><img src="./assets/logos/1-logo-mercado.svg" alt="mercado libre"></div>
+    <div class="carousel__item"><img src="./assets/logos/2-logo-rappi.svg" alt="rappi"></div>
+    <div class="carousel__item"><img src="./assets/logos/3-logo-rapyd.svg" alt="rapyd"></div>
+    <div class="carousel__item"><img src="./assets/logos/4-logo-higo.svg" alt="higo"></div>
+    <div class="carousel__item"><img src="./assets/logos/5-logo-aplazo.svg" alt="aplazo"></div>
+    <div class="carousel__item"><img src="./assets/logos/6-loco-costa.svg" alt="costa"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/7-logo-creditea.svg" alt="creditea"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/8-logo-jeeves.svg" alt="jeeves"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/9-logo-mobills.svg" alt="mobills"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/10-logo-serasa.svg" alt="serasa"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/11-logo-tribanco.svg" alt="tribanco"></div>
+    <div class="carousel__item hide-mobile"><img src="./assets/logos/12-logo-zenfi.svg" alt="zenfi"></div>
+  </div>
+  <div class="intersticial intersticial--odd wrapper">
+    <div class="intersticial__info">
+      <div class="intersticial__title">Belvo for consumers</div>
+      <div class="intersticial__text">
+        <p>Belvo is a <b>leading technology company in Latin America</b> working with more than 150
+          apps and financial services in Mexico, Brazil, and Colombia.</p>
+
+        <p>Our platform allows you to <b>safely and easily</b> share your financial data with a growing number of
+          innovative apps
+          and solutions across Latin America to access new services, always with your consent and following the highest
+          privacy and security standards.</p>
+
+        <p><b>+3M people have already used Belvo to securely connect</b> their data with apps to receive better
+          financial
+          services.</p>
+      </div>
+      <div class="intersticial__link">
+        <a class="btn btn--gost" href="https://belvo.com/what-is-belvo/" target="_blank" rel="noopener noreferrer">
+          Know more about Belvo <img class="btn__icon" src=" ./assets/arrow-blue.png">
+        </a>
+      </div>
+    </div>
+    <div class="intersticial__image">
+      <img src="./assets/belvo-for-consumers.png">
+    </div>
+  </div>
+  <div class="intersticial intersticial--even wrapper">
+    <div class="intersticial__info">
+      <div class="intersticial__title">How does Belvo protect my data?</div>
+      <div class="intersticial__text">
+        <p>The first time you enter your credentials in the application they are sent to
+          Belvo to be stored and encrypted in our servers.</p>
+
+        <p>From that moment on, your personal data is transformed into an alphanumeric random code that is impossible to
+          decipher.</p>
+
+        <p>This code is used to identify the user without the need to send or expose the content of the credentials at
+          any
+          time.</p>
+
+        <p>Each time your application makes a request to obtain your data, our platform connects directly with the
+          financial institution to extract the information without the need to expose its content.</p>
+      </div>
+
+      <div class="intersticial__link">
+        <a class="btn btn--gost" href="https://belvo.com/security/" target="_blank" rel="noopener noreferrer">
+          Check our security protocols <img class="btn__icon" src=" ./assets/arrow-blue.png">
+        </a>
+      </div>
+    </div>
+    <div class="intersticial__image"><img src="./assets/protect-data.png" alt=""></div>
+  </div>
+  <div class="intersticial intersticial--odd wrapper">
+    <div class="intersticial__info">
+      <div class="intersticial__title">Is it safe to share my credentials with Belvo?</div>
+      <div class="intersticial__text">
+        <p>It is completely safe to share your credentials with Belvo.</p>
+
+        <p>To protect your privacy and security at all times, we use strong encryption systems that turn your
+          credentials
+          into a unique, random identifier, while your information is kept safe in a private vault.</p>
+
+        <p>This identifier is what is used to communicate with the applications, without the need for your private
+          details
+          to be exposed at any time.</p>
+      </div>
+      <div class="intersticial__link">
+        <a class="btn btn--gost" href="https://belvo.com/security/" target="_blank" rel="noopener noreferrer">
+          How we handle data <img class="btn__icon" src=" ./assets/arrow-blue.png">
+        </a>
+      </div>
+    </div>
+    <div class="intersticial__image"><img src="./assets/credentials.png" alt=""></div>
+  </div>
+  <div class="cards wrapper">
+    <h2 class="cards__header">How does it work?</h2>
+    <div class="cards__wrapper">
+      <div class="card">
+        <div class="card__head">
+          <img src="./assets/card-1.png" class="card__header__img">
+        </div>
+        <div class="card__description">
+          To connect your financial data with an app, you only need to enter the data which you normally use to access
+          your financial institution accounts, such as your username and password.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__head">
+          <img src="./assets/card-2.png" class="card__header__img">
+        </div>
+        <div class="card__description">
+          Our platform then encrypts and securely stores this information and safely extracts the data from your account
+          using a read-only access mode, always with your permission, without ever exposing its content.
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__head">
+          <img src="./assets/card-3.png" class="card__header__img">
+        </div>
+        <div class="card__description">
+          Once this step is done, our platform creates a secure connection with the app you are using so they can
+          process
+          your financial data and offer you better services.
+        </div>
+      </div>
+    </div>
+    <div class="cards__footer">
+      <a class="btn" href="https://belvo.com/about/" target="_blank" rel="noopener noreferrer">
+        Know more about our use cases <img class="btn__icon" src=" ./assets/arrow.png">
+      </a>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="contact-us">
+
+      <div class="contact-us__info">
+        <h3 class="contact-us__info__header">Contact us</h3>
+        <p class="contact-us__info__text">If you have any questions, please contact <a href="mailto:hello@belvo.com"
+            class="contact-us__mail">hello@belvo.com</a></p>
+      </div>
+      <div class="contact-us__link">
+        <a class="btn btn--alt" href="mailto:hello@belvo.com">
+          Get in touch <img class="btn__icon" src=" ./assets/arrow-dark-blue.png">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer__content wrapper">
+      <div class="footer__logo"><img src="./assets/logos/BelvoLogo.svg" alt="belvo"></div>
+      <div class="footer__claim">Made with <img class="footer__love-ico" src="./assets/love.png" alt="love"> in
+        Barcelona,
+        Ciudad de Mexico, SãoPaulo & Bogotá</div>
+    </div>
+
+  </div>
+
+
+
 </body>
 
 </html>
