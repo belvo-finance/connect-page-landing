@@ -23,13 +23,5 @@ if (!danger.github.pr.body) {
   warn(':grey_question: This pull request needs a description.')
 }
 
-// Warns if there are changes to package.json, and tags the team.
-const packageChanged = danger.git.modified_files.indexOf('package.json') > -1
-if (!packageChanged) {
-  const title = ':lock: package.json'
-  const idea =
-    "Increasing the version it's not mandatory only if the one in master has not been released yet!"
-  warn(`${title} - <i>${idea}</i>`)
-}
 
 message('One approval required for merging :smiley:')
